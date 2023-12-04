@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backGround">
+
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="344dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Сортировка массива"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <EditText
+        android:id="@+id/text_input"
+        android:layout_width="389dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/backGroundInput"
+        android:gravity="start"
+        android:hint="Введите цифры"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_header" />
+
+    <Button
+        android:id="@+id/button_ready"
+        android:layout_width="230dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:text="Готово"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input" />
+
+    <TextView
+        android:id="@+id/text_output"
+        android:layout_width="379dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/backGroundInput"
+        android:text="Вывод"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_ready" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
